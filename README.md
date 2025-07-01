@@ -1,35 +1,52 @@
 # File Organizer
 
-A simple Python script that organizes files in the current directory into categorized folders.
+A Python application that organizes files into categorized folders with a graphical interface using tkinter.
 
 ## Features
 
 - Creates category folders automatically
-- Moves files to their appropriate folders based on file extensions
-- Works with the current directory where the script is run
-- Simple and lightweight with no dependencies beyond Python standard library
+- Moves files based on their extensions
+- Handles undefined file types in a dedicated folder
+- Simple GUI interface using Tkinter
+- Works with any selected directory
 
-## Supported File Types
+## Supported File Categories
 
-| Category | Extensions                          |
-|----------|-------------------------------------|
-| Scripts  | `.py`                               |
-| Doc      | `.pdf`, `.zip`                      |
-| Images   | `.jpg`, `.png`, `.gif`              |
+| Category     | Example Extensions                          |
+|--------------|---------------------------------------------|
+| Documents    | .doc, .docx, .pdf, .txt, .csv               |
+| Images       | .jpg, .png, .psd, .svg                      |
+| Media        | .mp3, .mp4, .avi, .mkv                      |
+| Archives     | .zip, .rar, .7z, .tar.gz                    |
+| Executables  | .exe, .msi, .py, .sh                        |
+| Etc          | .tmp, .log, .cfg, .ini                      |
+| Undefined    | (All other file types)                      |
 
+## Requirements
 
-Requirements
-Python 3.x
+- Python 3.6+
+- Tkinter (usually included with Python)
 
-Notes
-The script only organizes files in the directory where it's run
-Hidden files (starting with '.') are ignored
-Existing files in target folders with the same names will cause errors
+## Installation
+
+1. Clone or download the repository
+2. Install requirements (if any):
 
 ## Usage
 
-1. Place the script in the directory you want to organize
-2. Run the script:
+1. Click "Browse" and select your folder (e.g., /home/user/Documents/MyFiles)
+2. Click "Organize Files"
 
-```bash
-python files_organizer.py
+### Using the GUI:
+
+1. Navigate to the script directory:
+   ```bash
+   cd /path/to/script/files_organizer/src
+
+2. Run the application:
+
+   python3 gui_tkinter.py
+
+   or if you need to specify the full path:
+
+   python3 /full/path/to/gui_tkinter.py
