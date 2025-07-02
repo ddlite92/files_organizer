@@ -1,6 +1,24 @@
+## 🚀 Future Development Roadmap
+
+### **Core Improvements**
+#### GUI Redesign
+- [ ] Migrate to PyQt6/DearPyGui for modern UI
+- [ ] Add theme support (dark/light mode)
+- [/] Use sub-category method eg: Documents > 'PDF' :.pdf, 'DOC' : .doc, 
+- [ ] Implement undo functionality
+- [ ] More precise categorization and system file checking
+- [ ] Package for other OS.
+
+
 # File Organizer
 
 A Python application that organizes files into categorized folders with a graphical interface using tkinter.
+
+
+
+https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
+
+
 
 ## Features
 
