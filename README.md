@@ -2,6 +2,12 @@
 
 A Python application that organizes files into categorized folders with a graphical interface using tkinter.
 
+
+
+https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
+
+
+
 ## Features
 
 - Creates category folders automatically
