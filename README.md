@@ -4,7 +4,7 @@
 
 - [ ] Migrate to PyQt6/DearPyGui for modern UI
 - [ ] Add theme support (dark/light mode)
-- [/] Use sub-category method eg: Documents > 'PDF' :.pdf, 'DOC' : .doc,
+- [/] Use sub-category method eg: Documents > 'PDF' : .pdf, 'DOC' : .doc,
 - [ ] Implement undo functionality
 - [ ] More precise categorization and system file checking
 - [ ] Package for other OS.
@@ -17,23 +17,28 @@ https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
 
 ## Features
 
-- Creates category folders automatically
+- Creates category and sub-category folders automatically
 - Moves files based on their extensions
-- Handles undefined file types in a dedicated folder
+- Handles undefined file types in undefine folder
 - Simple GUI interface using Tkinter
 - Works with any selected directory
 
-## Supported File Categories
+# Supported File Categories (Detailed)
 
-| Category    | Example Extensions            |
-| ----------- | ----------------------------- |
-| Documents   | .doc, .docx, .pdf, .txt, .csv |
-| Images      | .jpg, .png, .psd, .svg        |
-| Media       | .mp3, .mp4, .avi, .mkv        |
-| Archives    | .zip, .rar, .7z, .tar.gz      |
-| Executables | .exe, .msi, .py, .sh          |
-| Etc         | .tmp, .log, .cfg, .ini        |
-| Undefined   | (All other file types)        |
+| Main Category   | Sub-Category | Example Extensions                                                            |
+| --------------- | ------------ | ----------------------------------------------------------------------------- |
+| **Documents**   | Work         | .doc, .docx, .xls, .xlsx, .ppt                                                |
+|                 | Personal     | .pptx, .odt, .ods, .odp, .pdf, .txt, .rtf, .md, .csv                          |
+| **Media**       | Images       | .jpg, .jpeg, .heic, .raw, .dng, .psd, .ai, .svg, .eps, .webp, .png            |
+|                 | Video/Audio  | .mp3, .wav, .flac, .aac, .ogg, .m4a, .mp4, .avi, .mov, .mkv, .wmv, .flv, .m4b |
+| **Archives**    | Zip          | .zip, .rar, .7z, .tar.gz                                                      |
+|                 | Disk Images  | .iso, .dmg, .img                                                              |
+| **Executables** | Installer    | .exe, .msi, .ps1, .apk, .ipa                                                  |
+|                 | Scripts      | .py, .bat, .sh                                                                |
+| **Etc**         | Temporary    | .tmp, .temp, .~                                                               |
+|                 | Logs         | .log, .old, .bak                                                              |
+|                 | Config/Data  | .ini, .cfg, .conf, .db, .dat                                                  |
+| **Undefined**   | -            | (All other file types)                                                        |
 
 ## Requirements
 
