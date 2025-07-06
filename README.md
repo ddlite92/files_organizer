@@ -2,7 +2,7 @@
 
 ### **Core Improvements**
 
-- [ ] Migrate to PyQt6/DearPyGui for modern UI
+- [/] Migrate to PyQt6/DearPyGui for modern UI
 - [ ] Add theme support (dark/light mode)
 - [/] Use sub-category method eg: Documents > 'PDF' : .pdf, 'DOC' : .doc,
 - [ ] Implement undo functionality
