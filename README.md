@@ -2,16 +2,16 @@
 
 ### **Core Improvements**
 
-- [/] Migrate to PyQt6/DearPyGui for modern UI
+- [x] Migrate to PyQt6/DearPyGui for modern UI
 - [ ] Add theme support (dark/light mode)
-- [/] Use sub-category method eg: Documents > 'PDF' : .pdf, 'DOC' : .doc,
+- [x] Use sub-category method eg: Documents > 'PDF' : .pdf, 'DOC' : .doc,
 - [ ] Implement undo functionality
 - [ ] More precise categorization and system file checking
 - [ ] Package for other OS.
 
 # File Organizer
 
-A Python application that organizes files into categorized folders with a graphical interface using tkinter.
+A Python application that organizes files into categorized folders with a modern Qt interface.
 
 https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
 
@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
 - Creates category and sub-category folders automatically
 - Moves files based on their extensions
 - Handles undefined file types in undefine folder
-- Simple GUI interface using Tkinter
+- Modern GUI interface using PyQt5
 - Works with any selected directory
 
 # Supported File Categories (Detailed)
@@ -43,31 +43,49 @@ https://github.com/user-attachments/assets/ff713a75-011f-433a-b634-d5ef35d8285a
 ## Requirements
 
 - Python 3.6+
-- Tkinter (usually included with Python)
+- PyQt5 (`pip install PyQt5`)
+- (Optional) pyqt5-tools for Qt Designer
 
 ## Installation
 
 1. Clone or download the repository
-2. Install requirements (if any):
+2. cd to folder executables/linux_exe
+3. Run the package name ```bash sudo dpkg -i ./Files_Organizer-0.1.deb```
+
 
 ## Usage
 
 1. Click "Browse" and select your folder (e.g., /home/user/Documents/MyFiles)
 2. Click "Organize Files"
 
-### Using the GUI:
+### Using the PyQt GUI:
 
 1. Navigate to the script directory:
 
    ```bash
-   cd /path/to/script/files_organizer/src
+   cd /path/to/script/files_organizer/src/organizer
 
    ```
 
 2. Run the application:
 
-   python3 gui_tkinter.py
+   python3 qt_gui.py
 
    or if you need to specify the full path:
 
-   python3 /full/path/to/gui_tkinter.py
+   python3 /full/path/to/qt_gui.py
+
+### Thanks to: 
+
+1. Icons are from flaticon
+   - pocike https://www.flaticon.com/authors/pocike
+   - Hopstarter https://www.flaticon.com/authors/hopstarter
+   - kmg design https://www.flaticon.com/authors/kmg-design
+
+
+# Known issues and development
+
+1. The are 2 types of application that can be run, which is running with python3 or package installation .deb
+2. As for now, direct run are tested, hence why there are folder src/organize kept for that purpose
+3. deb package are not tested and futher OS package development in progress
+
